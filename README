@@ -1,3 +1,81 @@
+Type:
+1. namespace
+2. resource
+3. action
+4. named route
+5. Group - not related to api but need to structure it
+
+All api will be organized in tree
+
+TODO:
+- browsing of help
+- import from api 
+- settings to way of import(.help or ?help=true)
+- admin side to edit help
+- news based on changes in api -> a kind of blog posts
+- Versions of changes of each api-help resource
+- Simple bug tracker
+- Comments(inner+public)
+- Redmine and others export of bugs
+- Scheme of using of API (htpp and/or headers)
+- js test panel - (support of authentications)
+- support of one or more projects(subdomains?)?
+- support versions of api
+
+Example of json response from api-app:
+{
+  "type": "resourse",
+  "url_scheme": null,
+  "method": null,
+  "title": "Users",
+  "description": "Here will be markdown formatted description",
+  "example":null,
+  "help_url": "this.project.com/resources/users",
+  "related_documentation": ["",""...]
+  "params": {},
+  "nested_objects":[
+    {
+      {
+        "type": "action",
+        "url_scheme": "/users"
+        "title": "Users list"
+        "description": "Here will be markdown formatted description",
+        "example":"js example in some way",
+        "help_url": "this.project.com/get/users",
+        "params": {},
+        "nested_objects":[]
+      }
+      ,{
+        "type": "action",
+        "url_scheme": "/users/:id"
+        "title": "Show user details(profile)"
+        "description": "Here will be markdown formatted description",
+        "example":"js example in some way",
+        "help_url": "this.project.com/get/users/:id",
+        "params": {},
+        "nested_objects":[]
+      }
+
+    },
+  ]
+}
+,{
+  "type": "resourse",
+  "url_scheme": "/tags"
+  "title": "Tags"
+  "description": "Here will be markdown formatted description",
+  "example":"js example in some way",
+  "help_url": "this.project.com/tags",
+  "params": {},
+  "nested_objects":[
+    {
+      
+    },
+  ]
+}
+
+
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
