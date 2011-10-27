@@ -5,9 +5,17 @@ gem 'rails', '3.1.1'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+#gem 'sqlite3'
 
 gem 'json'
+
+gem 'pg'
+
+gem 'execjs', :git => 'git://github.com/sstephenson/execjs.git'
+gem 'handlebars_assets'
+gem 'js-routes'
+#gem 'i18n-js'
+
 
 # Gems used only for assets and not required
 # in production environments by default.

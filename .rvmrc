@@ -1,0 +1,6 @@
+# Switching to project specific RVM env
+rvm use ruby-1.8.7-p302@apihelp
+
+
+# To enable switching to default/system when leaving a directory set
+rvm_project_rvmrc_default=1

@@ -10,5 +10,6 @@
 //= require backbone
 //= require backbone_rails_sync
 //= require backbone_datalink
+//= require handlebars
 //= require backbone/apihelp
 //= require_tree .
